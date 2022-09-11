@@ -1,20 +1,24 @@
-package com.cg.SpringDi;
+package com.cg.di;
 
 public class Student {
 	
-	MathCheat m;
+	private String name;
+	private int id;
 	
-	public MathCheat getM() {
-		return m;
+	
+
+	public Student(String name, int id) {
+		super();
+		this.name = name;
+		this.id = id;
 	}
 
-	public void setM(MathCheat m) {
-		this.m = m;
-	}
 
-	void cheating() {
-		m.cheat();
-		
-	}
 
+	public void Display() {
+	System.out.println("Student name is: "+ name);
+	System.out.println("Student ID is: "+ id);
+	
+}
+	
 }
